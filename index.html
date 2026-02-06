@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="logo.png" alt="Trello Logo" class="logo">
+            <ul class="navlinks">
+                <li><a href="#" class="link">Features<span class="dropdown-arrow"></span></a></li>
+                <li><a href="#" class="link">Solutions<span class="dropdown-arrow"></span></a></li>
+                <li><a href="#" class="link">Plans<span class="dropdown-arrow"></span></a></li>
+                <li><a href="#" class="link">Pricing</a></li>
+                <li><a href="#" class="link">Resources<span class="dropdown-arrow"></span></a></li> 
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul class="navlinks">
+                <li><a href="#" class="link">Log in</a></li>
+                <li><a href="#" class="btn btn-primary">Get Trello for free</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="announcement-bar">
+        <p>Accelerate your teams' work with AI features 🤖 now available for all Premium and Enterprise! <a href="#" class="announcement-link">Learn more</a></p>
+    </div>
+
+    <main class="page1">
+        <div class="page1-container">
+            <section class="pa-left">
+                <h1 class="page1-title">Capture, organize, and tackle your to-dos from anywhere.</h1>
+                <p class="page1-sub">Escape the clutter and chaos—unleash your productivity with Trello.</p>
+
+                <form class="page1-form" action="#" method="get">
+                    <input id="email" name="email" type="email" placeholder="Email" required>
+                    <button class="btn btn-primary" type="submit">Sign up - it's free!</button>
+                </form>
+
+                <p class="page1-privacy">By entering my email, I acknowledge the <a href="#">Atlassian Privacy Policy</a></p>
+
+                <p class="watch-video"><a href="#">Watch video</a></p>
+            </section>
+
+            <aside class="page1-right" aria-hidden="true">
+                <div class="phone-wrap">
+                    <img src="pic1.png" alt="Trello mobile preview" class="phone-image">
+                </div>
+            </aside>
+        </div>
+    </main>
+    <main class = "page2">
+        <div class = "page2-container">
+            <section class = "pa2-left">
+                <h1 class = "page2-title-h1">TRELLO 101</h1>
+                <h2 class = "page2-title-h2">Your productivity powerhouse</h2>
+                <p class = "page2-title-p">Stay organized and efficient with Inbox, Boards, and Planner. Every to-do, idea, or responsibility—no matter how small—finds its place, keeping you at the top of your game.</p>
+                
+                <div class="features-list">
+                    <label for="slide1" class="feature-item">
+                        <h3>Inbox</h3>
+                        <p>When it's on your mind, it goes in your Inbox. Capture your to-dos from anywhere, anytime.</p>
+                    </label>
+                    <label for="slide2" class="feature-item">
+                        <h3>Boards</h3>
+                        <p>Your to-do list may be long, but it can be manageable! Keep tabs on everything from "to-dos to tackle" to "mission accomplished!"</p>
+                    </label>
+                    <label for="slide3" class="feature-item active">
+                        <h3>Planner</h3>
+                        <p>Drag, drop, get it done. Snap your top tasks into your calendar and make time for what truly matters.</p>
+                    </label>
+                </div>
+            </section>
+            <aside class="page2-right">
+                <div class="slider-container">
+                    <input type="radio" name="slide" id="slide1" class="slide-input" checked>
+                    <input type="radio" name="slide" id="slide2" class="slide-input">
+                    <input type="radio" name="slide" id="slide3" class="slide-input">
+
+                    <div class="slider-wrapper">
+                        <div class="slide">
+                            <img src="pic2.png" alt="Inbox feature" class="slide-image">
+                        </div>
+                        <div class="slide">
+                            <img src="pic3.png" alt="Boards feature" class="slide-image">
+                        </div>
+                        <div class="slide">
+                            <img src="pic4.png" alt="Planner feature" class="slide-image">
+                        </div>
+                    </div>
+
+                    <div class="slider-dots">
+                        <label for="slide1" class="dot"></label>
+                        <label for="slide2" class="dot"></label>
+                        <label for="slide3" class="dot"></label>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+</body>
+</html>
