@@ -573,11 +573,8 @@ body {
     .navbar-right {
         display: none;
     }
-    .navbar-left{
+    .navbar-left .navlinks{
         display: none;
-    }
-    .navbar-left img {
-        display: block;
     }
     .hamburger {
         display: flex;
