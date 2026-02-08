@@ -9,27 +9,38 @@
 <body>
     <div class="navbar">
         <div class="navbar-left">
-            <img src="logo.png" alt="Logo" class="logo">
+            <img src="logo.png" alt="Trello Logo" class="logo">
+            <ul class="navlinks desktop-nav">
+                <li><a href="#" class="link">Features<span class="dropdown-arrow"></span></a></li>
+                <li><a href="#" class="link">Solutions<span class="dropdown-arrow"></span></a></li>
+                <li><a href="#" class="link">Plans<span class="dropdown-arrow"></span></a></li>
+                <li><a href="#" class="link">Pricing</a></li>
+                <li><a href="#" class="link">Resources<span class="dropdown-arrow"></span></a></li>
+            </ul>
         </div>
 
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-
-        <ul class="navlinks">
-            <li><a href="#" class="link">Features<span class="dropdown-arrow"></span></a></li>
-            <li><a href="#" class="link">Solutions<span class="dropdown-arrow"></span></a></li>
-            <li><a href="#" class="link">Plans<span class="dropdown-arrow"></span></a></li>
-            <li><a href="#" class="link">Pricing</a></li>
-            <li><a href="#" class="link">Resources<span class="dropdown-arrow"></span></a></li>
-            <li><a href="#" class="link">Log in</a></li>
-            <li><a href="#" class="btn">Get Trello for free</a></li>
-        </ul>
+        <div class="navbar-right desktop-nav">
+            <ul class="navlinks">
+                <li><a href="#" class="link">Log in</a></li>
+                <li><a href="#" class="btn">Get Trello for free</a></li>
+            </ul>
+        </div>
+        <button class="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
+
+<div class="mobile-menu">
+    <a href="#">Features</a>
+    <a href="#">Solutions</a>
+    <a href="#">Plans</a>
+    <a href="#">Pricing</a>
+    <a href="#">Resources</a>
+    <a href="#">Log in</a>
+    <a href="#" class="btn">Get Trello for free</a>
+</div>
 
     <div class="announcement-bar">
         <p>Accelerate your teams' work with AI features 🤖 now available for all Premium and Enterprise! <a href="#" class="announcement-link">Learn more</a></p>
@@ -60,15 +71,11 @@
     </main>
     <main class = "page2">
         <div class = "page2-container">
-            <input type="radio" name="slide" id="slide1" class="slide-input" checked>
-            <input type="radio" name="slide" id="slide2" class="slide-input">
-            <input type="radio" name="slide" id="slide3" class="slide-input">
-
             <section class = "pa2-left">
                 <h1 class = "page2-title-h1">TRELLO 101</h1>
                 <h2 class = "page2-title-h2">Your productivity powerhouse</h2>
                 <p class = "page2-title-p">Stay organized and efficient with Inbox, Boards, and Planner. Every to-do, idea, or responsibility—no matter how small—finds its place, keeping you at the top of your game.</p>
-
+                
                 <div class="features-list">
                     <label for="slide1" class="feature-item active">
                         <h3>Inbox</h3>
@@ -86,6 +93,10 @@
             </section>
             <aside class="page2-right">
                 <div class="slider-container">
+                    <input type="radio" name="slide" id="slide1" class="slide-input" checked>
+                    <input type="radio" name="slide" id="slide2" class="slide-input">
+                    <input type="radio" name="slide" id="slide3" class="slide-input">
+
                     <div class="slider-wrapper">
                         <div class="slide">
                             <img src="pic2.png" alt="Inbox feature" class="slide-image">
