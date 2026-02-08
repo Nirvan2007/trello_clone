@@ -573,7 +573,7 @@ body {
     .navbar-right {
         display: none;
     }
-    .navbar-left .navlinks{
+    .navlinks{
         display: none;
     }
     .hamburger {
