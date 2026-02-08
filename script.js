@@ -14,3 +14,12 @@ radios.forEach((radio, index) => {
     featureItems[index].classList.add('active');
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const menu = document.querySelector(".mobile-menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("open");
+  });
+});

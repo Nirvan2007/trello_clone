@@ -1,6 +1,5 @@
 
 .navbar {
-    position: relative;
     background-color: white;
     display: flex;
     align-items: center;
@@ -18,7 +17,6 @@
 }
 
 .navbar-left{
-    flex: 0 0 auto;
     background-color: white;
     display: flex;
     align-items: center;
@@ -523,16 +521,14 @@ body {
     display: block;
 }
 
+/* -------- HAMBURGER -------- */
+
 .hamburger {
     display: none;
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 44px;
-    height: 44px;
     background: none;
     border: none;
+    width: 44px;
+    height: 44px;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
@@ -547,29 +543,26 @@ body {
     border-radius: 2px;
 }
 
+/* -------- MOBILE MENU -------- */
 
 .mobile-menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 64px;
     left: 0;
     right: 0;
     background: white;
     padding: 16px;
     box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
-    z-index: 999;
     flex-direction: column;
     gap: 12px;
+    z-index: 999;
 }
 
-.mobile-menu a {
-    text-decoration: none;
-    color: #172B4D;
-    font-size: 14px;
-}
+/* -------- MOBILE ONLY -------- */
 
 @media (max-width: 768px) {
-    .desktop-nav {
+    .navbar-right {
         display: none;
     }
 
@@ -577,7 +570,12 @@ body {
         display: flex;
     }
 
-    .navbar {
-        position: relative;
+    .navbar:hover {
+        transform: none;
+        box-shadow: none;
     }
+}
+
+.mobile-menu.open {
+    display: flex;
 }
