@@ -583,8 +583,8 @@ body {
 
 .nav-toggle-label .bar { 
     display: block; 
-    width: 22px; height: 2px; 
-    background: #172B4D; margin: 4px 0; 
+    width: 20px; height: 2px; 
+    background: #172B4D; margin: 3px 0; 
     border-radius: 2px; 
     transition: transform 0.2s, opacity 0.2s; 
 }
@@ -601,10 +601,17 @@ body {
 @media (max-width: 768px) {
     .nav-toggle-label {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         top: 12px;
         right: 16px;
         z-index: 100;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border-radius: 6px;
     }
     .navbar-left { 
         gap: 12px; 
@@ -612,8 +619,7 @@ body {
     .navlinks { 
         display: none !important; 
     }
-    .nav-toggle:checked ~ .navbar-left .navlinks,
-    .nav-toggle:checked ~ .navbar-right .navlinks {
+    .nav-toggle:checked ~ .navlinks {
         display: flex !important;
         flex-direction: column;
         position: absolute;
@@ -630,12 +636,10 @@ body {
     .navbar-right .navlinks { 
         align-items: flex-start; 
     }
-    .navbar-right .navlinks .btn { 
+    .navlinks .btn { 
         width: 100%; 
         display: inline-block; 
         text-align: left; 
     }
-    .navbar-left .navlinks, .navbar-right .navlinks { 
-        width: 100%; 
-    }
+    .navlinks { width: 100%; }
 }
