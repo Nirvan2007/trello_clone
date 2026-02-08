@@ -575,7 +575,7 @@ body {
     .navbar-left{
         display: none;
     }
-    .navbar.left:first-of-type {
+    .navbar-left img {
         display: flex;
     }
     .hamburger {
