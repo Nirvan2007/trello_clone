@@ -531,6 +531,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 }
 
 .hamburger span {
@@ -576,7 +577,7 @@ body {
         display: none;
     }
     .navbar-left img {
-        display: flex;
+        display: block;
     }
     .hamburger {
         display: flex;
