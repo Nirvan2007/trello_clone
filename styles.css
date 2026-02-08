@@ -565,7 +565,9 @@ body {
     .navbar-right {
         display: none;
     }
-
+    .navbar-left{
+        display: none;
+    }
     .hamburger {
         display: flex;
     }
@@ -574,6 +576,25 @@ body {
         transform: none;
         box-shadow: none;
     }
+    .page1 { padding: 48px 24px; }
+    .page1-container { flex-direction: column; gap: 24px; align-items: flex-start; }
+    .page1-right { order: -1; width: 100%; }
+    .phone-image { max-width: 360px; }
+
+    .page2-container { flex-direction: column; gap: 24px; }
+    .pa2-left { width: 100%; }
+    .page2-right { width: 100%; margin-top: 0; }
+    .slider-container { max-width: 100%; width: 100%; }
+    .slide-image { max-height: 320px; }
+
+    .page3, .page3-split, .page3-white { padding: 48px 24px; }
+    .page3-title { font-size: 36px; }
+
+    .card { padding: 24px; gap: 20px; flex-direction: column !important; }
+    .card-image { width: 100%; max-height: 300px; }
+
+    .features-list { gap: 12px; }
+    .feature-item { padding: 14px 12px; } 
 }
 
 .mobile-menu.open {
