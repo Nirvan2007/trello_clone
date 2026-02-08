@@ -326,21 +326,21 @@ body {
     transition: opacity 0.5s ease-in-out;
 }
 
-#slide1:checked ~ .slider-wrapper {
+#slide1:checked ~ .page2-right .slider-container .slider-wrapper {
     transform: translateX(0%);
 }
 
-#slide2:checked ~ .slider-wrapper {
+#slide2:checked ~ .page2-right .slider-container .slider-wrapper {
     transform: translateX(-100%);
 }
 
-#slide3:checked ~ .slider-wrapper {
+#slide3:checked ~ .page2-right .slider-container .slider-wrapper {
     transform: translateX(-200%);
 }
 
-#slide1:checked ~ .slider-wrapper .slide:nth-child(1),
-#slide2:checked ~ .slider-wrapper .slide:nth-child(2),
-#slide3:checked ~ .slider-wrapper .slide:nth-child(3) {
+#slide1:checked ~ .page2-right .slider-container .slider-wrapper .slide:nth-child(1),
+#slide2:checked ~ .page2-right .slider-container .slider-wrapper .slide:nth-child(2),
+#slide3:checked ~ .page2-right .slider-container .slider-wrapper .slide:nth-child(3) {
     opacity: 1;
 }
 
@@ -379,9 +379,9 @@ body {
 }
 
 
-#slide1:checked ~ .slider-dots label:nth-of-type(1),
-#slide2:checked ~ .slider-dots label:nth-of-type(2),
-#slide3:checked ~ .slider-dots label:nth-of-type(3) {
+#slide1:checked ~ .page2-right .slider-container .slider-dots label:nth-of-type(1),
+#slide2:checked ~ .page2-right .slider-container .slider-dots label:nth-of-type(2),
+#slide3:checked ~ .page2-right .slider-container .slider-dots label:nth-of-type(3) {
     background: #3959eb;
 }
 
@@ -519,5 +519,84 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+#slide1:checked ~ .pa2-left .features-list label[for="slide1"],
+#slide2:checked ~ .pa2-left .features-list label[for="slide2"],
+#slide3:checked ~ .pa2-left .features-list label[for="slide3"] {
+    border-left-color: #3959eb;
+    color: #0f1724;
+}
+#slide1:checked ~ .pa2-left .features-list label[for="slide1"] h3,
+#slide2:checked ~ .pa2-left .features-list label[for="slide2"] h3,
+#slide3:checked ~ .pa2-left .features-list label[for="slide3"] h3 {
+    color: #0f1724;
+}
+
+@media (max-width: 1024px) {
+    .navbar { padding: 10px 20px; gap: 12px; }
+    .navlinks { gap: 12px; font-size: 13px; }
+
+    .page1 { padding: 48px 24px; }
+    .page1-container { flex-direction: column; gap: 24px; align-items: flex-start; }
+    .page1-right { order: -1; width: 100%; }
+    .phone-image { max-width: 360px; }
+
+    .page2-container { flex-direction: column; gap: 24px; }
+    .pa2-left { width: 100%; }
+    .page2-right { width: 100%; margin-top: 0; }
+    .slider-container { max-width: 100%; width: 100%; }
+    .slide-image { max-height: 320px; }
+
+    .page3, .page3-split, .page3-white { padding: 48px 24px; }
+    .page3-title { font-size: 36px; }
+
+    .card { padding: 24px; gap: 20px; flex-direction: column !important; }
+    .card-image { width: 100%; max-height: 300px; }
+
+    .features-list { gap: 12px; }
+    .feature-item { padding: 14px 12px; }
+}
+
+@media (max-width: 480px) {
+    .navbar { padding: 8px 12px; }
+    .page1 { padding: 32px 14px; }
+    .page1-title { font-size: 28px; }
+    .page1-form input[type="email"]{ padding: 10px; font-size: 14px; }
+    .page1-form .btn{ padding: 10px; font-size: 14px; width: 140px; }
+
+    .features-list { gap: 10px; }
+    .feature-item { padding-left: 12px; padding-right: 12px; min-height: 56px; }
+    .feature-item h3{ font-size: 18px; }
+
+    .slider-dots { padding: 10px 0; }
+    .slide-image { max-height: 220px; }
+
+    .card-image img { object-fit: contain; }
+}
+
+.nav-toggle { position: absolute; left: -9999px; }
+.nav-toggle-label { display: none; cursor: pointer; width: 44px; height: 44px; align-items: center; justify-content: center; }
+.nav-toggle-label .bar { display: block; width: 22px; height: 2px; background: #172B4D; margin: 4px 0; border-radius: 2px; transition: transform 0.2s, opacity 0.2s; }
+
+@media (max-width: 768px) {
+    .nav-toggle-label { display: flex; position: absolute; left: 16px; top: 12px; z-index: 60; }
+    .navbar-left { gap: 12px; }
+    .navlinks { display: none !important; }
+    .nav-toggle:checked ~ .navbar-left .navlinks,
+    .nav-toggle:checked ~ .navbar-right .navlinks {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 12px 16px;
+        gap: 12px;
+        box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+        z-index: 50;
+    }
+    .navbar-right .navlinks { align-items: flex-start; }
 }
 

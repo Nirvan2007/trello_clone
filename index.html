@@ -8,6 +8,12 @@
 </head>
 <body>
     <div class="navbar">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
         <div class="navbar-left">
             <img src="logo.png" alt="Trello Logo" class="logo">
             <ul class="navlinks">
@@ -54,11 +60,16 @@
     </main>
     <main class = "page2">
         <div class = "page2-container">
+            <!-- radio inputs used for slider and feature highlighting -->
+            <input type="radio" name="slide" id="slide1" class="slide-input" checked>
+            <input type="radio" name="slide" id="slide2" class="slide-input">
+            <input type="radio" name="slide" id="slide3" class="slide-input">
+
             <section class = "pa2-left">
                 <h1 class = "page2-title-h1">TRELLO 101</h1>
                 <h2 class = "page2-title-h2">Your productivity powerhouse</h2>
                 <p class = "page2-title-p">Stay organized and efficient with Inbox, Boards, and Planner. Every to-do, idea, or responsibility—no matter how small—finds its place, keeping you at the top of your game.</p>
-                
+
                 <div class="features-list">
                     <label for="slide1" class="feature-item active">
                         <h3>Inbox</h3>
@@ -76,10 +87,6 @@
             </section>
             <aside class="page2-right">
                 <div class="slider-container">
-                    <input type="radio" name="slide" id="slide1" class="slide-input" checked>
-                    <input type="radio" name="slide" id="slide2" class="slide-input">
-                    <input type="radio" name="slide" id="slide3" class="slide-input">
-
                     <div class="slider-wrapper">
                         <div class="slide">
                             <img src="pic2.png" alt="Inbox feature" class="slide-image">
