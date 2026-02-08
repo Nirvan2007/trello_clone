@@ -1,5 +1,6 @@
 
 .navbar {
+    position: relative;
     background-color: white;
     display: flex;
     align-items: center;
@@ -575,14 +576,42 @@ body {
     .card-image img { object-fit: contain; }
 }
 
-.nav-toggle { position: absolute; left: -9999px; }
-.nav-toggle-label { display: none; cursor: pointer; width: 44px; height: 44px; align-items: center; justify-content: center; }
-.nav-toggle-label .bar { display: block; width: 22px; height: 2px; background: #172B4D; margin: 4px 0; border-radius: 2px; transition: transform 0.2s, opacity 0.2s; }
+.nav-toggle {
+    position: absolute;
+    left: -9999px;
+}
+
+.nav-toggle-label .bar { 
+    display: block; 
+    width: 22px; height: 2px; 
+    background: #172B4D; margin: 4px 0; 
+    border-radius: 2px; 
+    transition: transform 0.2s, opacity 0.2s; 
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (max-width: 768px) {
-    .nav-toggle-label { display: flex; position: absolute; right: 16px; left: auto; top: 12px; z-index: 60; }
-    .navbar-left { gap: 12px; }
-    .navlinks { display: none !important; }
+    .nav-toggle-label {
+        display: flex;
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        z-index: 100;
+    }
+    .navbar-left { 
+        gap: 12px; 
+    }
+    .navlinks { 
+        display: none !important; 
+    }
     .nav-toggle:checked ~ .navbar-left .navlinks,
     .nav-toggle:checked ~ .navbar-right .navlinks {
         display: flex !important;
@@ -598,8 +627,15 @@ body {
         z-index: 50;
         width: 100%;
     }
-    .navbar-right .navlinks { align-items: flex-start; }
-    .navbar-right .navlinks .btn { width: 100%; display: inline-block; text-align: left; }
-    .navbar-left .navlinks, .navbar-right .navlinks { width: 100%; }
+    .navbar-right .navlinks { 
+        align-items: flex-start; 
+    }
+    .navbar-right .navlinks .btn { 
+        width: 100%; 
+        display: inline-block; 
+        text-align: left; 
+    }
+    .navbar-left .navlinks, .navbar-right .navlinks { 
+        width: 100%; 
+    }
 }
-
