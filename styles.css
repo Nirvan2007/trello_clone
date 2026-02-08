@@ -561,7 +561,7 @@ body {
 
 /* -------- MOBILE ONLY -------- */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .navbar-right {
         display: none;
     }
@@ -596,6 +596,24 @@ body {
     .features-list { gap: 12px; }
     .feature-item { padding: 14px 12px; } 
 }
+
+@media (max-width: 480px) {
+    .navbar { padding: 8px 12px; }
+    .page1 { padding: 32px 14px; }
+    .page1-title { font-size: 28px; }
+    .page1-form input[type="email"]{ padding: 10px; font-size: 14px; }
+    .page1-form .btn{ padding: 10px; font-size: 14px; width: 140px; }
+
+    .features-list { gap: 10px; }
+    .feature-item { padding-left: 12px; padding-right: 12px; min-height: 56px; }
+    .feature-item h3{ font-size: 18px; }
+
+    .slider-dots { padding: 10px 0; }
+    .slide-image { max-height: 220px; }
+
+    .card-image img { object-fit: contain; }
+}
+
 
 .mobile-menu.open {
     display: flex;
