@@ -561,6 +561,19 @@ body {
 
 /* -------- MOBILE ONLY -------- */
 
+#slide1:checked ~ .features-list label[for="slide1"],
+#slide2:checked ~ .features-list label[for="slide2"],
+#slide3:checked ~ .features-list label[for="slide3"] {
+    border-left-color: #3959eb;
+    color: #0f1724;
+}
+#slide1:checked ~ .features-list label[for="slide1"] h3,
+#slide2:checked ~ .features-list label[for="slide2"] h3,
+#slide3:checked ~ .features-list label[for="slide3"] h3 {
+    color: #0f1724;
+}
+
+
 @media (max-width: 1024px) {
     .navbar-right {
         display: none;
@@ -576,6 +589,9 @@ body {
         transform: none;
         box-shadow: none;
     }
+    .navbar { padding: 10px 20px; gap: 12px; }
+    .navlinks { gap: 12px; font-size: 13px; }
+
     .page1 { padding: 48px 24px; }
     .page1-container { flex-direction: column; gap: 24px; align-items: flex-start; }
     .page1-right { order: -1; width: 100%; }
@@ -594,7 +610,7 @@ body {
     .card-image { width: 100%; max-height: 300px; }
 
     .features-list { gap: 12px; }
-    .feature-item { padding: 14px 12px; } 
+    .feature-item { padding: 14px 12px; }
 }
 
 @media (max-width: 480px) {
@@ -613,7 +629,6 @@ body {
 
     .card-image img { object-fit: contain; }
 }
-
 
 .mobile-menu.open {
     display: flex;
