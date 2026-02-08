@@ -326,21 +326,21 @@ body {
     transition: opacity 0.5s ease-in-out;
 }
 
-#slide1:checked ~ .slider-wrapper {
+#slide1:checked ~ .page2-right .slider-container .slider-wrapper {
     transform: translateX(0%);
 }
 
-#slide2:checked ~ .slider-wrapper {
+#slide2:checked ~ .page2-right .slider-container .slider-wrapper {
     transform: translateX(-100%);
 }
 
-#slide3:checked ~ .slider-wrapper {
+#slide3:checked ~ .page2-right .slider-container .slider-wrapper {
     transform: translateX(-200%);
 }
 
-#slide1:checked ~ .slider-wrapper .slide:nth-child(1),
-#slide2:checked ~ .slider-wrapper .slide:nth-child(2),
-#slide3:checked ~ .slider-wrapper .slide:nth-child(3) {
+#slide1:checked ~ .page2-right .slider-container .slider-wrapper .slide:nth-child(1),
+#slide2:checked ~ .page2-right .slider-container .slider-wrapper .slide:nth-child(2),
+#slide3:checked ~ .page2-right .slider-container .slider-wrapper .slide:nth-child(3) {
     opacity: 1;
 }
 
@@ -379,9 +379,9 @@ body {
 }
 
 
-#slide1:checked ~ .slider-dots label:nth-of-type(1),
-#slide2:checked ~ .slider-dots label:nth-of-type(2),
-#slide3:checked ~ .slider-dots label:nth-of-type(3) {
+#slide1:checked ~ .page2-right .slider-container .slider-dots label:nth-of-type(1),
+#slide2:checked ~ .page2-right .slider-container .slider-dots label:nth-of-type(2),
+#slide3:checked ~ .page2-right .slider-container .slider-dots label:nth-of-type(3) {
     background: #3959eb;
 }
 
@@ -561,15 +561,15 @@ body {
 
 /* -------- MOBILE ONLY -------- */
 
-#slide1:checked ~ .features-list label[for="slide1"],
-#slide2:checked ~ .features-list label[for="slide2"],
-#slide3:checked ~ .features-list label[for="slide3"] {
+#slide1:checked ~ .pa2-left .features-list label[for="slide1"],
+#slide2:checked ~ .pa2-left .features-list label[for="slide2"],
+#slide3:checked ~ .pa2-left .features-list label[for="slide3"] {
     border-left-color: #3959eb;
     color: #0f1724;
 }
-#slide1:checked ~ .features-list label[for="slide1"] h3,
-#slide2:checked ~ .features-list label[for="slide2"] h3,
-#slide3:checked ~ .features-list label[for="slide3"] h3 {
+#slide1:checked ~ .pa2-left .features-list label[for="slide1"] h3,
+#slide2:checked ~ .pa2-left .features-list label[for="slide2"] h3,
+#slide3:checked ~ .pa2-left .features-list label[for="slide3"] h3 {
     color: #0f1724;
 }
 
