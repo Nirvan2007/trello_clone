@@ -54,6 +54,11 @@
     padding: 10px 0;
 }
 
+
+.link:hover{
+    color:#0052CC;
+}
+
 .dropdown-arrow{
   width: 6px;
   height: 6px;
